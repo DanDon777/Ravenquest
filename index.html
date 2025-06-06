@@ -15,92 +15,97 @@
     .main {
       background: #22243a;
       max-width: 480px;
-      margin: 60px auto 0 auto;
-      border-radius: 20px;
+      margin: 58px auto 0 auto;
+      border-radius: 22px;
       box-shadow: 0 4px 28px #0008;
-      padding: 44px 32px 34px 32px;
+      padding: 40px 32px 36px 32px;
       position: relative;
       overflow: hidden;
     }
+    .fomo-bar {
+      background: linear-gradient(90deg,#fbda61,#6cf4b5,#36c7ff);
+      color: #23243a;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.08em;
+      border-radius: 10px;
+      padding: 10px 0 10px 0;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 12px #0004;
+      letter-spacing: 0.01em;
+    }
     .headline {
-      font-size: 1.34em;
+      font-size: 1.36em;
       font-weight: bold;
       text-align: center;
       color: #ffd84d;
-      margin-bottom: 8px;
-      line-height: 1.18;
+      margin-bottom: 12px;
+      line-height: 1.19;
     }
     .subheadline {
       text-align: center;
       color: #50ecbb;
       font-weight: 600;
-      font-size: 1.07em;
-      margin-bottom: 20px;
-    }
-    .fomo-bar {
-      background: linear-gradient(90deg,#fbda61,#6cf4b5,#36c7ff);
-      color: #262436;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.07em;
-      letter-spacing: 0.03em;
-      border-radius: 12px;
-      padding: 12px 0 11px 0;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 16px #0004;
+      font-size: 1.09em;
+      margin-bottom: 22px;
+      line-height: 1.33;
     }
     .benefits {
-      list-style: none; padding: 0; margin: 17px 0 20px 0;
-      font-size: 1.02em;
+      list-style: none; padding: 0; margin: 25px 0 24px 0;
+      font-size: 1.04em;
     }
     .benefits li {
-      margin-bottom: 11px;
-      display: flex; align-items: flex-start;
+      margin-bottom: 14px;
+      display: flex; align-items: center;
     }
     .benefits li span {
-      font-size: 1.16em;
-      margin-right: 10px;
+      font-size: 1.18em;
+      margin-right: 12px;
+      min-width: 28px;
+      text-align: right;
+      display: inline-block;
     }
     .sectiontitle {
       color: #ffed8f;
-      margin: 23px 0 7px 0;
+      margin: 29px 0 12px 0;
       font-weight: bold;
-      font-size: 1.08em;
+      font-size: 1.13em;
       letter-spacing: 0.01em;
+      text-align: left;
     }
     .why {
-      list-style: none; padding: 0; margin: 10px 0 12px 0; font-size: 1em;
+      list-style: none; padding: 0; margin: 0 0 22px 0; font-size: 1em;
     }
     .why li {
-      margin-bottom: 8px;
-      display: flex; align-items: flex-start;
+      margin-bottom: 10px;
+      display: flex; align-items: center;
     }
-    .why li span { font-size: 1.07em; margin-right: 7px;}
+    .why li span { font-size: 1.10em; margin-right: 10px; min-width: 24px; }
     .joinme {
       text-align: center;
       color: #5ff0c5;
-      margin: 18px 0 2px 0;
-      font-size: 1.01em;
+      margin: 26px 0 6px 0;
+      font-size: 1.04em;
       font-weight: 600;
     }
     .cta-btn {
       display: block;
       width: 100%;
       background: linear-gradient(90deg,#3ef4a2,#3a85ff);
-      color: #25232e;
-      padding: 18px 0;
-      border-radius: 14px;
-      font-size: 1.22em;
+      color: #23243a;
+      padding: 21px 0;
+      border-radius: 15px;
+      font-size: 1.25em;
       font-weight: bold;
       text-align: center;
-      margin: 28px 0 7px 0;
+      margin: 34px 0 12px 0;
       box-shadow: 0 2px 18px #1c1c38bb;
       text-decoration: none;
       transition: background 0.19s, color 0.19s, transform 0.08s;
       border: none;
       outline: none;
       cursor: pointer;
-      animation: pulse 2s infinite;
+      animation: pulse 2.3s infinite;
     }
     .cta-btn:hover {
       background: linear-gradient(90deg,#3a85ff,#3ef4a2);
@@ -108,19 +113,28 @@
       transform: scale(1.03);
     }
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 #3ef4a255;}
-      60% { box-shadow: 0 0 0 12px #3ef4a210;}
-      100% { box-shadow: 0 0 0 0 #3ef4a255;}
+      0% { box-shadow: 0 0 0 0 #3ef4a244;}
+      60% { box-shadow: 0 0 0 16px #3ef4a210;}
+      100% { box-shadow: 0 0 0 0 #3ef4a244;}
     }
     .footnote {
       color: #efefef;
       text-align: center;
-      font-size: 0.98em;
-      margin-top: 19px;
-      opacity: 0.85;
+      font-size: 0.97em;
+      margin-top: 20px;
+      opacity: 0.89;
+      letter-spacing: 0.01em;
     }
+    .benefits b,
+    .why b {
+      font-weight: 600;
+      color: #ffd84d;
+    }
+    .benefits span, .why span { line-height: 1; }
+    .benefits li:last-child,
+    .why li:last-child { margin-bottom: 0;}
     @media (max-width: 600px) {
-      .main { padding: 16px 4px; }
+      .main { padding: 18px 4px; }
       .headline { font-size: 1.09em; }
       .cta-btn { font-size: 1em; padding: 13px 0;}
     }
