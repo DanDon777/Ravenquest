@@ -4,124 +4,201 @@
   <meta charset="UTF-8">
   <title>🔥 RavenQuest: $20 Free + Exclusive Pet! 🔥</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Play the Adventure Game of the Year with me and grab $20 in free rewards + an exclusive pet! RavenQuest is the MMO everyone's joining.">
+  <meta name="description" content="Play the MMO everyone's joining. Grab $20 in free loot & an exclusive pet instantly. Join my RavenQuest squad today!">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: #151622;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #fff;
-      margin: 0; padding: 0;
+    html,body{background:#141622;margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;}
+    .main{
+      background:#23233a;
+      max-width:530px;
+      margin:40px auto 0 auto;
+      border-radius:22px;
+      box-shadow:0 4px 38px #000a;
+      padding:40px 32px 24px 32px;
+      position:relative;
     }
-    .main {
-      background: #23233a;
-      max-width: 540px;
-      margin: 60px auto;
-      border-radius: 20px;
-      box-shadow: 0 4px 32px #0007;
-      padding: 44px 30px 32px 30px;
+    h1{
+      color:#ffce36;
+      text-align:center;
+      margin-bottom:8px;
+      font-size:2em;
+      line-height:1.2;
+      letter-spacing:-1px;
     }
-    h1, h2 {
-      color: #ffce43;
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 14px;
+    .tagline{
+      color:#7dffbf;
+      text-align:center;
+      font-weight:700;
+      margin-bottom:28px;
+      font-size:1.13em;
     }
-    h2 { font-size: 1.2em; color: #4fe9a6; margin-bottom: 18px; }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 12px 0 16px 0;
+    .fomo{
+      color:#ff6d7e;
+      text-align:center;
+      font-size:1.11em;
+      margin-bottom:14px;
+      font-weight:700;
+      animation:fomopulse 1.8s infinite;
     }
-    ul li {
-      margin-bottom: 8px;
-      font-size: 1.06em;
+    @keyframes fomopulse{
+      0%,100%{color:#ff6d7e;}
+      50%{color:#ffe058;}
     }
-    .bigcta {
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin: 34px 0 12px 0;
-      background: linear-gradient(90deg,#4fe9a6,#457bff);
-      color: #23233a;
-      padding: 20px 0;
-      border-radius: 18px;
-      font-size: 1.35em;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 2px 18px #1c1c38ee;
-      transition: background 0.2s, color 0.2s;
+    .section-title{
+      color:#7dffbf;
+      font-size:1.18em;
+      font-weight:700;
+      margin-top:24px;
+      margin-bottom:8px;
     }
-    .bigcta:hover { background: linear-gradient(90deg,#457bff,#4fe9a6); color: #fff; }
-    .fomo {
-      text-align: center;
-      color: #ff6d7e;
-      font-size: 1.04em;
-      margin-top: 10px;
-      font-weight: bold;
+    ul{list-style:none;margin:0 0 22px 0;padding:0;}
+    ul li{margin-bottom:9px;font-size:1.1em;}
+    .bonus{color:#ffe058;font-weight:700;}
+    .cta-bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      margin:36px 0 6px 0;
     }
-    .faq {
-      background: #1a1c29;
-      border-radius: 12px;
-      padding: 18px 16px;
-      margin: 22px 0 10px 0;
-      color: #a2e3e9;
-      font-size: 1em;
+    .cta-btn{
+      display:inline-block;
+      background:linear-gradient(90deg,#4fe9a6,#457bff 90%);
+      color:#222;
+      padding:21px 0;
+      border-radius:19px;
+      font-size:1.42em;
+      font-weight:900;
+      width:100%;
+      text-align:center;
+      text-decoration:none;
+      box-shadow:0 4px 24px #4fe9a633,0 2px 18px #457bff33;
+      letter-spacing:-.5px;
+      transition:background .2s, color .2s, transform .1s;
+      margin-bottom:8px;
+      animation:ctapulse 1.7s infinite;
     }
-    .highlight { color: #ffce43; font-weight: bold; }
-    @media(max-width:640px){
-      .main{ margin:16px; padding:16px 8px;}
-      .bigcta{font-size:1.02em;padding:15px 0;}
+    @keyframes ctapulse{
+      0%,100%{box-shadow:0 4px 24px #4fe9a633,0 2px 18px #457bff33;}
+      50%{box-shadow:0 6px 42px #4fe9a677,0 8px 32px #457bff55;}
+    }
+    .cta-btn:hover{background:linear-gradient(90deg,#457bff 70%,#4fe9a6 100%);color:#fff;transform:scale(1.035);}
+    .countdown{
+      background:#1d2234;
+      color:#ffe058;
+      border-radius:10px;
+      text-align:center;
+      margin:0 auto 18px auto;
+      padding:7px 0 3px 0;
+      font-size:1.14em;
+      max-width:290px;
+      font-weight:700;
+      letter-spacing:.5px;
+    }
+    .mini-faq{
+      background:#191a2b;
+      color:#baf3ff;
+      border-radius:10px;
+      padding:16px 14px 11px 16px;
+      margin:16px 0 7px 0;
+      font-size:1em;
+      box-shadow:0 1px 7px #12122233;
+    }
+    .social-proof{
+      text-align:center;
+      color:#b6f98b;
+      font-size:1.02em;
+      margin-bottom:10px;
+      margin-top:-3px;
+      font-weight:500;
+    }
+    .security{
+      text-align:center;
+      color:#b9baff;
+      font-size:0.92em;
+      margin-top:20px;
+    }
+    @media(max-width:650px){
+      .main{padding:12px 3vw 22px 3vw;}
+      .cta-btn{font-size:1.12em;padding:14px 0;}
+      h1{font-size:1.2em;}
+    }
+    .footer{
+      text-align:center;
+      margin-top:24px;
+      color:#72748d;
+      font-size:0.97em;
     }
   </style>
+  <script>
+    // Simple countdown timer to drive more FOMO
+    document.addEventListener("DOMContentLoaded",function(){
+      var timeLeft = 18*60+Math.floor(Math.random()*14); // 18-32 minutes
+      var timer = document.getElementById('countdown-timer');
+      function formatTime(t){
+        var m = Math.floor(t/60);
+        var s = t%60;
+        return m+"m "+(s<10?"0":"")+s+"s";
+      }
+      function update(){
+        if(timeLeft>0){
+          timer.innerText = formatTime(timeLeft);
+          timeLeft--;
+          setTimeout(update,1000);
+        } else {
+          timer.innerText="Expiring soon!";
+        }
+      }
+      update();
+    });
+  </script>
 </head>
 <body>
   <div class="main">
     <h1>🔥 THE MMORPG EVERYONE’S TALKING ABOUT JUST LAUNCHED — AND YOU’RE INVITED! 🔥</h1>
-    <h2>Play RavenQuest with Me & Instantly Get $20 in Free Rewards + an Exclusive Pet (LIMITED)!</h2>
-    <p><b>This is NOT a drill.</b><br>For a limited time, <span class="highlight">anyone who registers with my link below</span> gets:</p>
+    <div class="tagline">
+      Play <b>RavenQuest</b> with Me & Instantly Get <span class="bonus">$20 in Free Loot + an Exclusive Pet!</span> <br>
+      <span style="font-size:0.93em;">(ONLY with this invite — not available elsewhere!)</span>
+    </div>
+    <div class="fomo">
+      ⏳ <span id="countdown-timer">22m 00s</span> left before bonuses disappear!
+    </div>
+    <div class="social-proof">
+      <b>2,000,000+ gamers joined this week.<br>My invite slots are almost GONE.</b>
+    </div>
+    <div class="section-title">Here’s what you get if you join now:</div>
     <ul>
-      <li>🪙 <b>$20 worth of Ravenpacks, 100% FREE</b> (no credit card, no catch)</li>
-      <li>🦅 <b>A unique, Limited Edition Companion</b> (never available again!)</li>
-      <li>🏆 <b>Priority access to Day 1 Events & Rewards</b></li>
-      <li>🌍 <b>A spot in my personal squad</b> (crush bosses, dominate PvP, and explore together)</li>
+      <li>🪙 <span class="bonus">$20 in Ravenpacks — absolutely FREE</span> (no card, no payment)</li>
+      <li>🦅 <span class="bonus">Exclusive Limited Edition Companion</span> (never coming back!)</li>
+      <li>🏆 <span class="bonus">Priority Access</span> to Day 1 events & epic rewards</li>
+      <li>🤝 <span class="bonus">My private squad</span> — team up, get carried, and win more loot!</li>
     </ul>
-    <h2>Why RavenQuest?</h2>
+    <div class="section-title">Why RavenQuest?</div>
     <ul>
-      <li>🏅 <b>Awarded Adventure Game of the Year</b> — beating out every major MMO</li>
-      <li>⏳ <b>1000s of hours</b> of PvE & PvP, new content EVERY week</li>
-      <li>🛡️ <b>True Sandbox:</b> Change the world, build empires, trade, war, make real friends</li>
-      <li>🆓 <b>100% Free to Play:</b> No paywalls, no BS.</li>
-      <li>🌎 <b>Global launch — all your friends are joining NOW!</b></li>
+      <li>🏅 <b>Adventure Game of the Year</b> — outperformed every major MMO</li>
+      <li>⏳ <b>1000s of hours</b> PvE & PvP, new updates weekly</li>
+      <li>🛡️ <b>True Sandbox:</b> Build, trade, battle, rule — your choices matter!</li>
+      <li>🆓 <b>100% Free to Play</b> — no paywalls, no tricks</li>
+      <li>🌎 <b>Global launch</b> — your friends are probably already playing!</li>
     </ul>
-    <p class="fomo">Do NOT miss this:<br>
-      <a class="bigcta" href="https://ravenquest.io/register/ref/57580" target="_blank">🚀 Start FREE — Claim $20 + Pet Now! 🚀</a>
-      <span style="font-size:0.95em;">(This is my personal invite — only a handful of my slots left!)</span>
-    </p>
-    <div class="faq">
-      <b>FAQ (Why this is the real deal):</b>
-      <ul>
-        <li><b>Is it really free?</b> YES, no payment needed. You get all bonuses instantly at sign-up.</li>
-        <li><b>Can I play solo or with friends?</b> Both! But join my squad for secret events and carries.</li>
-        <li><b>Mobile, PC or both?</b> PC for now, mobile version soon.</li>
-      </ul>
+    <div class="cta-bar">
+      <a class="cta-btn" href="https://ravenquest.io/register/ref/57580" target="_blank">🚀 Start FREE — Claim $20 + Pet Now! 🚀</a>
+      <div class="countdown">
+        <span>⚠️ Less than <span id="countdown-timer">25m 00s</span> left for these rewards!</span>
+      </div>
+      <div style="color:#ff6d7e;font-weight:bold;margin-top:6px;font-size:1.05em;">Once they're gone, they're gone — act now.</div>
     </div>
-    <div class="faq">
-      <b>Still not convinced?</b>
-      <ul>
-        <li>🔥 Over <b>2,000,000+ pre-registered</b></li>
-        <li>🔥 Already trending #1 MMORPG of 2025</li>
-        <li>🔥 <b>No install needed</b> — jump in instantly</li>
-      </ul>
+    <div class="mini-faq">
+      <b>Is this real? Absolutely.</b> No payment, no tricks. Your rewards are unlocked instantly at sign-up.<br>
+      <b>Solo or squad?</b> Both, but join me for bonus events & easy wins.<br>
+      <b>How long does it take?</b> Under 1 minute — instant access, no install!
     </div>
-    <div class="fomo">STOP SCROLLING.<br>Don’t be the person who hears about this too late.<br>
-    Use my invite and let’s become legends together!</div>
-    <div style="text-align:center;margin:36px 0;">
-      <a class="bigcta" href="https://ravenquest.io/register/ref/57580" target="_blank">🚀 Start FREE — Claim $20 + Pet Now! 🚀</a>
+    <div class="security">
+      <span style="color:#54e0ff;">Site is safe & powered by GitHub Pages. Your data never touches 3rd parties.</span>
     </div>
-    <div style="font-size:0.93em;text-align:center;color:#e1e1ff;margin-top:10px;">
-      (<b>First come, first served.</b> Rewards vanish when the timer ends!)
-      <br>
-      <i>DM me after you join and I’ll send you bonus tips & secrets!</i>
+    <div class="footer">
+      <b>DM me after you join for special squad tips — let’s become legends in RavenQuest!</b>
+      <br><br>
+      <span>Not affiliated with RavenQuest — just a fan helping you score bonuses.</span>
     </div>
   </div>
 </body>
